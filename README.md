@@ -3,7 +3,7 @@
 ## Overview
 This project implements a stacked ensemble learning framework for cancer classification using high-dimensional gene expression data. The goal is to improve predictive performance while maintaining biological interpretability by integrating machine learning models with gene-level and pathway-level analysis.
 
-The framework combines one base learner and several meta-learners into a stacked ensemble model and identifies biologically meaningful genes and pathways that contribute to clinical analysis of the gene's relationship with specific cancers.
+The framework combines one base learner and several meta-learners into a stacked ensemble model and identifies biologically meaningful genes that contribute to clinical analysis of the gene's relationship with specific cancer types.
 
 ---
 
