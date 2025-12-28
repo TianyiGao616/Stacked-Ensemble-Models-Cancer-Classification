@@ -3,7 +3,7 @@
 ## Overview
 This project implements a stacked ensemble learning framework for cancer classification using high-dimensional gene expression data. The goal is to improve predictive performance while maintaining biological interpretability by integrating machine learning models with gene-level and pathway-level analysis.
 
-The framework combines multiple base learners into a meta-model and identifies biologically meaningful genes and pathways that contribute to cancer subtype classification.
+The framework combines one base learners and several meta-learners into a meta-model and identifies biologically meaningful genes and pathways that contribute to cancer subtype classification.
 
 ---
 
@@ -23,11 +23,11 @@ The framework combines multiple base learners into a meta-model and identifies b
 2. notebooks/
 - Contains Jupyter notebooks used for exploratory data analysis, visualization, and biological interpretation of results.
 3. src/
-- Contains the main implementation of the project, including:
-(1) Training base machine learning models (e.g., SVM)
-(2) Building stacked ensemble models
-(3) Performing feature selection
-(4) Mapping selected genes to biological pathways
+ - Contains the core implementation of the project, including:
+    - Training base machine learning models (e.g., Support Vector Machines)
+    - Building stacked ensemble models
+    - Performing feature selection
+    - Mapping selected genes to biological pathways for interpretation
 4. results/
 - includes the project report, summarize results from the analysis.
 
@@ -52,6 +52,7 @@ Recursive feature selection is used to identify genes that contribute most stron
 
 ### 4. Biological Interpretation
 Selected top 10 and 20 genes are mapped to known biological pathways to provide interpretable biological insight.
+
 
 Author: Tianyi Gao (Collaborator: Audrey Qian)
 titigao@bu.edu
